@@ -1,0 +1,24 @@
+{
+  "@metadata": {
+    "authors": [
+      "Arthur"
+    ],
+    "last-updated": "2017-11-23",
+    "locale": "zh"
+  },
+  "collect_qrcode_tech_support": "由EVERONET提供技术支持",
+  "collect_qrcode_tech_support_ms": "由Merchant Support提供技术支持",
+  "collect_qrcode_tech_support_uniweb": "由Uniweb Pte. Ltd提供技术支持",
+  "collect_qrcode_tech_support_judypay": "由JUDYPAY提供技术支持",
+  "collect_qrcode_tech_support_allpay": "由AllPay提供技术支持",
+  "collect_qrcode_telephone": "联系电话",
+  "collect_qrcode_website": "网址",
+  "collect_qrcode_print_hint": "保存后可自行打印",
+  "collect_qrcode_save_button": "保存到相册",
+  "collect_qrcode_saved_button": "保存成功",
+  "collect_qrcode_brandWarning": "您尚未开通此功能",
+  "collect_qrcode_select_title": "请选择收款码类型",
+  "collect_qrcode_title": "扫 码 付 款",
+  "collect_qrcode_select_Intergrated":"聚合码",
+  "collect_qrcode_select_Aggregated":"聚合码"
+}
