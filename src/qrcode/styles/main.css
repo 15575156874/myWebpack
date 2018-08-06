@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    line-height: 1.1428;
+    font-size: 62.5%;
+    height: 100%;
+    font-family: "PingFang SC", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.container {
+    padding: 1rem 2rem;
+    position: relative;
+    min-height: 100%;
+    display: none
+}
+
+#storeName {
+    min-height: 26px;
+}
+
+#imageContainer>.qr-container {
+    background-color: #1682FB;
+    color: #FFF;
+    text-align: center;
+    padding: 1.9rem 1rem 1.6rem;
+    font-variant-ligatures: none
+}
+
+#imageContainer>.qr-container>#storeName {
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #EEE;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#imageContainer>.qr-container>h1 {
+    word-spacing: 1rem;
+    margin: 1rem 0 1.3rem;
+    font-size: 2.5rem;
+    display: none;
+}
+
+#imageContainer>.qr-container>label {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #EEE;
+}
+
+#qrcode {
+    min-height: 223px;
+    position: relative;
+}
+#qrcode-title{
+    font-variant-ligatures: none
+}
+#qrcode>.logo-container {
+    position: absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-left: -20px;
+    margin-top: -20px;
+    z-index: 1;
+    background-color: #FFF;
+}
+
+#qrcode>.logo-container>img {
+    width: 40px;
+}
+
+#qrcode>div:last-child {
+    margin: 0 auto!important;
+}
+
+#imageContainer>.brands {
+    border: 1px solid #F1F1F1;
+    clear: left;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.brand-inner {
+    height: 4.4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-inner>.brand {
+    font-size: 1.5rem;
+    color: #323232;
+    align-items: center;
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.brand-inner>.brand:last-child {
+    margin-right: 0;
+}
+
+.brand-inner>.brand>img {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+#brandWarning {
+    font-size: 1.8rem;
+    color: red;
+    align-items: center;
+    margin:0;
+    display: none;
+}
+
+#imageContainer>.everonet-container {
+    border: 1px solid #F1F1F1;
+    border-top: none;
+    padding: 1.5rem 2rem 1.45rem;
+    background-color: #FFF;
+}
+
+.everonet-container>label {
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.everonet-container>dl {
+    margin: 1.5rem 0 0;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.everonet-container>dl>dt {
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    clear: left;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.everonet-container>dl>dd {
+    margin-left: 40%;
+    text-align: right;
+}
+
+#imageContainer {
+    padding-bottom: 13rem;
+}
+
+.button-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2rem 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.button-container>p {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #888;
+}
+
+.button-container>.btn {
+    position: relative;
+    display: block;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 2.55555556;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    background-color: #1682FB;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+}
+
+.button-container>.btn.saved {
+    background-color: #AAA;
+}
+
+.button-container>.btn.savedfailed {
+    background-color: #AAA;
+}
+
+#save>div {
+    display: inline-block;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    content: '';
+}
+
+.loader:before {
+    width: 1.3rem;
+    height: 2.4rem;
+    background: #1682FB;
+    border-radius: 2.4rem 0 0 2.4rem;
+    top: 0;
+    left: -0.1rem;
+    transform-origin: 1.3rem 1.2rem;
+    animation: load2 2s infinite ease 1.5s;
+}
+
+.loader {
+    font-size: 12px;
+    text-indent: -99999rem;
+    margin: 1rem auto;
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    box-shadow: inset 0 0 0 0.2rem #FFF;
+}
+
+.loader:after {
+    width: 1.3rem;
+    height: 2.4rem;
+    background: #1682FB;
+    border-radius: 0 2.4rem 2.4rem 0;
+    top: 0rem;
+    left: 1.2rem;
+    transform-origin: 0 1.2rem;
+    animation: load2 2s infinite ease;
+}
+
+@keyframes load2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.selectContainer {
+  padding: 1rem 2rem;
+  position: relative;
+  min-height: 100%;
+  display: none
+  
+}
+
+.selectContainer .btnBlock{
+  margin: 2rem;
+  position: relative;
+  min-height: 4.4rem;
+  font-size: 1.6rem;
+  display: none
+}
+
+.selectContainer .btn{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 2.55555556;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  background-color: #1682FB;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+}
+.selectContainer img{
+  width: 2rem;
+  height: 2rem;
+  padding: 3px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  bottom: -5px;
+}
+.selectContainer span{
+  margin-left: 20px
+}
+#ALP{
+  display: none
+}
+#WXP{
+  display: none
+}
+#VIS{
+  display: none
+}
+#UPI{
+  display: none
+}
+#MCC{
+  display: none
+}
+.show {
+    display: block!important;
+}
+
+.hide {
+    display: none!important;
+}

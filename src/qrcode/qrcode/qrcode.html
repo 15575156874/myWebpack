@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>My Collect QR Code</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div class="selectContainer">
+    <div class="btnBlock" id='title' data-i18n="collect_qrcode_select_title">请选择收款码类型</div>
+    <div class="btnBlock" id="Intergrated">
+      <button class="btn">
+        <!-- data-i18n="collect_qrcode_mainland" -->
+        <img src="images/alipay.png" id='ALP' alt="">
+        <img src="images/wechat.png" id='WXP' alt="">
+        <span data-i18n="collect_qrcode_select_Intergrated">Intergrated QR</span>
+      </button>
+    </div>
+    <div class="btnBlock" id="Aggregated">
+      <button class="btn">
+        <!-- data-i18n="collect_qrcode_mainland" -->
+        <img src="images/logo/logo1.png" id='UPI' alt="">
+        <img src="images/logo/logo2.png" id='VIS' alt="">
+        <img src="images/logo/logo3.png" id='MCC' alt="">
+        <span data-i18n="collect_qrcode_select_Aggregated">Aggregated QR</span>
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div id="imageContainer">
+      <div class="qr-container">
+        <h3 id="storeName"></h3>
+        <h1 id="qrcode-title" data-i18n="collect_qrcode_title">扫 码 付 款</h1>
+        <div id="qrcode">
+          <div class="logo-container">
+            <img id="logo" src="images/logo.png" alt="">
+          </div>
+        </div>
+        <label>No:
+          <span id="no"></span>
+        </label>
+      </div>
+      <div class="brands">
+        <div class="brand-inner" id="brandInner">
+          <div class="brand" id="ALPcard">
+            <img src="images/alipay.png" alt="">
+          </div>
+          <div class="brand" id="WXPcard">
+            <img src="images/wechat.png" alt="">
+          </div>
+          <div class="brand" id="UPIcard">
+            <img src="images/logo/logo1.png" alt="">
+          </div>
+          <div class="brand" id="VIScard">
+            <img src="images/logo/logo2.png" alt="">
+          </div>
+          <div class="brand" id="MCCcard">
+            <img src="images/logo/logo3.png" alt="">
+          </div>
+          <div id="brandWarning">
+            <span data-i18n="collect_qrcode_brandWarning">您尚未开通此功能</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="everonet-container">
+        <label id="techSupport" data-i18n="collect_qrcode_tech_support">TECH SUPPORT BY EVERONET</label>
+        <dl>
+          <dt data-i18n="collect_qrcode_telephone">Telephone</dt>
+          <dd id="tel">+86-21-60278098</dd>
+        </dl>
+        <dl>
+          <dt data-i18n="collect_qrcode_website">Website</dt>
+          <dd id="website">www.everonet.com</dd>
+        </dl>
+      </div> -->
+    </div>
+    <div class="button-container">
+      <p data-i18n="collect_qrcode_print_hint"></p>
+      <button class="btn" id="save">
+        <div class="" data-i18n="collect_qrcode_save_button">SAVE TO ALBUM</div>
+      </button>
+      <button class="btn saved hide" id="saved" data-i18n="collect_qrcode_saved_button">SAVED</button>
+    </div>
+  </div>
+  <iframe id="myIframe" style="display:none;"></iframe>
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function () {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-71851539-12');
+    ga('send', 'pageview', location.pathname);
+
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <!-- endbuild -->
+</body>
+
+</html>

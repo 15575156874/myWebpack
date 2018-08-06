@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+      "authors": [
+        "Arthur"
+      ],
+      "last-updated": "2018-1-23",
+      "locale": "th"
+    },
+    "collect_qrcode_tech_support": "ให้การสนับสนุนด้านเทคนิคโดย EVERONET",
+    "collect_qrcode_tech_support_ms": "ให้การสนับสนุนด้านเทคนิคโดย Merchant Support",
+    "collect_qrcode_tech_support_uniweb": "ให้การสนับสนุนด้านเทคนิคโดย Uniweb Pte. Ltd",
+    "collect_qrcode_tech_support_judypay": "ให้การสนับสนุนด้านเทคนิคโดย JUDYPAY",
+    "collect_qrcode_tech_support_allpay": "ให้การสนับสนุนด้านเทคนิคโดย AllPay",
+    "collect_qrcode_telephone": "เบอร์โทรศัพท์ติดต่อ",
+    "collect_qrcode_website": "เว็บไซด์",
+    "collect_qrcode_print_hint": "หลังจากบันทึกแล้ว  สามารถพิมพ์ด้วยตัวเอง ",
+    "collect_qrcode_save_button": "บันทึกไปย้งอัลบั้ม",
+    "collect_qrcode_saved_button": "บันทึกเรียบร้อยแล้ว",
+    "collect_qrcode_brandWarning": "คุณยังไม่ได้เปิดใช้งานคุณลักษณะนี้",
+    "collect_qrcode_select_title": "กรุณาเลือกประเภทรหัสแคชเชียร",
+    "collect_qrcode_title": "และรหัสการชำระเงิน",
+    "collect_qrcode_select_Intergrated":"รวมรหัส",
+    "collect_qrcode_select_Aggregated":"รวมรหัส"
+  }
+  

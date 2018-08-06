@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    line-height: 1.428;
+    font-size: 62.5%;
+    font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    height: 100%;
+}
+.hint>.step>.text-wrap>.translate{
+    display: none;
+    font-size: 20px;
+    min-width: 46%
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.container {
+    padding: 1.5rem 2rem;
+    display: none;
+}
+
+.container .title-container {
+    text-align: center;
+}
+
+.title-container .title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 2;
+    display: inline-block;
+    margin: 2rem auto;
+}
+
+.color-blue {
+    color: #008AFF;
+    border-top: 1px solid #008AFF;
+    border-bottom: 1px solid #008AFF;
+}
+
+.color-green {
+    color: #00C800;
+    border-top: 1px solid #00C800;
+    border-bottom: 1px solid #00C800;
+}
+.color-origin {
+  color: #e6b070;
+  border-top: 1px solid #e6b070;
+  border-bottom: 1px solid #e6b070;
+}
+
+.container p {
+    margin: 0;
+    color: #555;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.hint {
+    padding: 1rem 0 4rem;
+    counter-reset: step;
+}
+
+.hint>h2 {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.hint img {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.hint>.step {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.hint>.step:before {
+    content: counter(step);
+    counter-increment: step;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: #008AFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.alipay>.hint>.step:before {
+    background-color: #008AFF;
+}
+
+.weixin>.hint>.step:before {
+    background-color: #00C800;
+}
+.bank>.hint>.step:before {
+  background-color: #e6b070;
+}
+
+.hint>.step>.text-wrap {
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+    display: table;
+    min-height: 3rem;
+}
+.hint>.step>.text-wrap>p:first-of-type{
+    min-width:55%;
+}
+.hint>.step>.text-wrap>p {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+}
+
+#alipayQR {
+    width: 15rem;
+}
+
+.footer {
+    background-color: #F4F4F4;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer>h1 {
+    margin: 0;
+    color: #888888;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.show {
+    display: block!important;
+}

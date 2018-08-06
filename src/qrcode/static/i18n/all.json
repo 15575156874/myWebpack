@@ -1,0 +1,41 @@
+{
+  "@metadata": {
+    "authors": [
+      "Arthur"
+    ],
+    "last-updated": "2017-11-23",
+    "locale": "en"
+  },
+  "en": {
+    "collect_qrcode_tech_support": "Tech support by EVERONET",
+    "collect_qrcode_telephone": "Telephone",
+    "collect_qrcode_website": "Website",
+    "collect_qrcode_print_hint": "You could save it to album to print",
+    "collect_qrcode_save_button": "SAVE TO ALBUM",
+    "collect_qrcode_saved_button": "SAVED"
+  },
+  "ja": {
+    "collect_qrcode_tech_support": "EVERONETは技術サポートします",
+    "collect_qrcode_telephone": "連絡先",
+    "collect_qrcode_website": "ホームページ",
+    "collect_qrcode_print_hint": "保存後印刷できます",
+    "collect_qrcode_save_button": "アルバムに保存",
+    "collect_qrcode_saved_button": "保存成功"
+  },
+  "zh": {
+    "collect_qrcode_tech_support": "由EVERONET提供技术支持",
+    "collect_qrcode_telephone": "联系电话",
+    "collect_qrcode_website": "网址",
+    "collect_qrcode_print_hint": "保存后可自行打印",
+    "collect_qrcode_save_button": "保存到相册",
+    "collect_qrcode_saved_button": "保存成功"
+  },
+  "zh-tw": {
+    "collect_qrcode_tech_support": "由EVERONET提供技術支持",
+    "collect_qrcode_telephone": "聯繫電話",
+    "collect_qrcode_website": "網址",
+    "collect_qrcode_print_hint": "保存後可自行列印",
+    "collect_qrcode_save_button": "保存到相冊",
+    "collect_qrcode_saved_button": "保存成功"  
+  }
+}
