@@ -1,5 +1,5 @@
 require('../dependencies/base64/base64.js')
-require('../dependencies/jquery/dist/jquery.js')
+require('../dependencies/jquery/dist1/jquery.js')
 require('../dependencies/jquery-qrcode/index.js')
 require('../dependencies/jquery.i18n/index.js')
 require('../dependencies/jquery.i18n.messagestore/index.js')
