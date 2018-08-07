@@ -28,6 +28,7 @@
     "glob": "^7.1.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "npx": "^10.2.0",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss-loader": "^2.1.6",
     "style-loader": "^0.21.0",
