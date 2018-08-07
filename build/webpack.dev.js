@@ -9,7 +9,13 @@ module.exports = merge(common, {
     // devtool: 'inline-source-map',
     devServer: {
         contentBase: `./dist/${process.env.ENV_file}`,
-        hot: true
+        hot: true,
+        proxy: {
+            // '/api': {
+            //   target: 'http://localhost:3000',
+            //   pathRewrite: {'^/api' : ''}
+            // }
+        }
     },
     plugins: [
         new webpack.NamedModulesPlugin(),//以便更容易查看要修补(patch)的依赖
