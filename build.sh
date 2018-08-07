@@ -8,4 +8,6 @@ done
 mv dist/ sparrow_${cur_date}
 tar -zcvf ./sparrow_${cur_date}.tar.gz ./sparrow_${cur_date}/*
 rm -r sparrow_${cur_date}
+mkdir dist
+mv sparrow_${cur_date}.tar.gz dist
 echo "打包完毕"
