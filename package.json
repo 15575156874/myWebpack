@@ -7,7 +7,8 @@
     "test": "cross-env ENV_file=help node test",
     "build": "./build.sh",
     "start-help": "cross-env ENV_file=help webpack-dev-server --open --watch --config ./build/webpack.dev.js --colors --profile",
-    "start-qrcode": "cross-env ENV_file=qrcode webpack-dev-server --open --watch --config ./build/webpack.dev.js --colors --profile"
+    "start-qrcode": "cross-env ENV_file=qrcode webpack-dev-server --open --watch --config ./build/webpack.dev.js --colors --profile",
+    "npx": "npx -v"
   },
   "author": "gpound.liu",
   "license": "ISC",
@@ -34,6 +35,7 @@
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.3",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
     "webpack-merge": "^4.1.4"

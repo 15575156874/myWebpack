@@ -52,6 +52,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, `../dist/${process.env.ENV_file}`),
         filename: 'js/[name].bundle[hash].js',
-        chunkFilename: 'help.bundle.js',
+        chunkFilename: 'js/[name].[chunkhash:3].js'
     }
 };

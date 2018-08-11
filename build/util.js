@@ -27,9 +27,10 @@ glob.sync(`./src/${process.env.ENV_file}/**/*.html`).forEach(e => { //同步
     const htmlConf = {
         filename: filename,
         template: e,
+        //minify: true,
         //favicon: './src/assets/images/favicon.ico',
         inject: 'body',
-        chunks: [chunk]
+        chunks: [chunk, `${process.env.ENV_file}Chunk`]
     }
     htmlWebpackPluginDevConfig.plugins.push(new HtmlWebpackPlugin(htmlConf))
 })
